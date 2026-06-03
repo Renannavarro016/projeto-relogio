@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: .5s;
+}
+
+h1 {
+    padding: 30px;
+    text-align: center;
+    font-size: 2.1em;
+    color: white;
+}
+
+main {
+    display: block;
+    margin: auto;
+    margin-top: 75px;
+    padding: 40px;
+    background-color: white;
+    width: fit-content;
+    border-radius: 20px;
+    box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.308);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.box #res {
+    font-size: 1.5em;
+    margin-bottom: 35px;
+}
+
+.box #res p {
+    margin: 5px;
+}
+
+.box .foto {
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    width: 50%;
+    border: 2px solid white;
+    outline: 2px solid rgb(255, 68, 0);
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    height: 5px;
+    padding: 30px;
+    font-size: .9em;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    transition: color .5s;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.329);
+}
+
+hr {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 24%;
+}
+
+i {
+    font-size: 92%;
+    margin: 1px;
+}
+
+.locate i {
+    font-size: 65%;
+}
+
+@media screen and (max-width: 768px) {  
+    h1 {
+        margin-bottom: 70px;
+        font-size: 1.8em;
+    }
+
+    main {
+        margin-bottom: 20px;
+        width: 320px;
+        padding: 18px;
+    }
+
+    .box .foto {
+        margin: 10px;
+        margin-bottom: 25px;
+        width: 50%;
+    }
+
+    div p {
+        font-size: .9em;
+    }
+
+    hr {
+        width: 47%;
+    }
+}
