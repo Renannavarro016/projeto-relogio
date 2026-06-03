@@ -86,7 +86,7 @@ function atualizarHora() {
         `<p class="locate">${cidade} <i class="fa-solid fa-location-dot"></i></p><hr>
         <p>
         ${hora}:${min}
-        | <i class="fa-solid fa-sun"></i> ${temp}°</p>`
+        | <i class="fa-solid fa-moon"></i> ${temp}°</p>`
             b.style.backgroundImage = 'linear-gradient(90deg, rgb(1, 1, 18), rgb(56, 56, 85))'
             img.innerHTML = '<img src="https://media.istockphoto.com/id/1154975453/pt/foto/estaiadas-bridge-night-aerial-view-s%C3%A3o-paulo-brazil-business-center-financial-center-great.jpg?s=612x612&w=0&k=20&c=n35iXQqYHNJT2AfL9nOpQ-TDM_nsJyJhI8-lRKD_3aw=" alt="foto" class="foto">'
     }
