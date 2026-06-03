@@ -1,6 +1,6 @@
 
 Projeto de um Relógio dinâmico
-# Relógio Dinâmico ⌚
+## Relógio Dinâmico ⌚
 
 Projeto desenvolvido com HTML, CSS e JavaScript que exibe:
 - Hora em tempo real
