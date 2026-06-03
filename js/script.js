@@ -24,7 +24,6 @@ function atualizarTemp() {
 }
 
 function atualizarCidade() {
-
     navigator.geolocation.getCurrentPosition((posicao) => { //Só pega latitude e longitude.
 
         const lat = posicao.coords.latitude
