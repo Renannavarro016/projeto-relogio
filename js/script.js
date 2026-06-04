@@ -1,10 +1,10 @@
-let temp = ''
-let cidade = ''
+let temp = ''  // variavel para temperatura
+let cidade = ''  // variavel para cidade
 const res = document.querySelector('#res')  // resposta que aparece na tela (informação)
 const hora = new Date().getHours()  // pega a hora
 const min = new Date().getMinutes()  // pega o minuto
 const body = document.querySelector('body')  // pega o body
-const foto = document.querySelector('#foto')  // pega o img
+const foto = document.querySelector('#foto')  // pega a imagem
 
 function atualizarTemp() {
 
@@ -62,7 +62,8 @@ function atualizarCidade() {
 
         })
 
-        .catch(() => {   // Caso dê erro
+        // Caso dê erro
+        .catch(() => {   
             
             res.innerHTML = 
             'Cidade não encontrada'
@@ -77,7 +78,7 @@ function atualizarHora() {
     // variavel da cidade
     const localiza = `${cidade} <i class="fa-solid fa-location-dot"></i></p>` 
 
-    // adiciona zeros na frente da hr e min
+    // adiciona zero na frente da hr e min
     if (hora < 10) {
         hora = '0' + hora 
     }
@@ -88,7 +89,9 @@ function atualizarHora() {
     
 
     // condições e mudanças de temas do dia
+
     if (hora <= 5) {   // Madrugada
+
         res.innerHTML = 
         `<p class="locate">
         ${localiza}
@@ -105,6 +108,7 @@ function atualizarHora() {
            
         
     } else if (hora < 12) {   // Manhã
+        
         res.innerHTML = 
         `<p class="locate">
         ${localiza}
@@ -121,6 +125,7 @@ function atualizarHora() {
 
 
     } else if (hora >= 12 && hora < 18) {   // Tarde
+        
         res.innerHTML = 
         `<p class="locate">
         ${localiza}
@@ -137,6 +142,7 @@ function atualizarHora() {
 
 
     } else if (hora >= 18) {   // Noite
+        
         res.innerHTML =
         `<p class="locate">
         ${cidade} <i class="fa-solid fa-location-dot"></i>
@@ -151,6 +157,7 @@ function atualizarHora() {
         body.style.backgroundImage = 'linear-gradient(90deg, rgb(1, 1, 18), rgb(56, 56, 85))'
         foto.src = 'https://media.istockphoto.com/id/1154975453/pt/foto/estaiadas-bridge-night-aerial-view-s%C3%A3o-paulo-brazil-business-center-financial-center-great.jpg?s=612x612&w=0&k=20&c=n35iXQqYHNJT2AfL9nOpQ-TDM_nsJyJhI8-lRKD_3aw='
     }
+    
 }
 
 
