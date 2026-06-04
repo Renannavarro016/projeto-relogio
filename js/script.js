@@ -1,8 +1,8 @@
 let temp = ''  // variavel para temperatura
 let cidade = ''  // variavel para cidade
 const res = document.querySelector('#res')  // resposta que aparece na tela (informação)
-const hora = new Date().getHours()  // pega a hora
-const min = new Date().getMinutes()  // pega o minuto
+let hora = new Date().getHours()  // pega a hora
+let min = new Date().getMinutes()  // pega o minuto
 const body = document.querySelector('body')  // pega o body
 const foto = document.querySelector('#foto')  // pega a imagem
 
@@ -79,14 +79,8 @@ function atualizarHora() {
     const localiza = `${cidade} <i class="fa-solid fa-location-dot"></i></p>` 
 
     // adiciona zero na frente da hr e min
-    if (hora < 10) {
-        hora = '0' + hora 
-    }
-
-    if (min < 10) {
-        min = '0' + min
-    }
-    
+    hora = String(hora).padStart(2, '0')
+    min = String(min).padStart(2, '0')
 
     // condições e mudanças de temas do dia
 
