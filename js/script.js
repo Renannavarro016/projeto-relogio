@@ -148,8 +148,8 @@ function atualizarHora() {
         ${hora}:${min} | <i class="fa-solid fa-moon"></i> ${temp}°
         </p>`
         
-        body.style.backgroundImage = 'linear-gradient(90deg, rgb(1, 1, 18), rgb(56, 56, 85))'
-        foto.src = 'https://media.istockphoto.com/id/1154975453/pt/foto/estaiadas-bridge-night-aerial-view-s%C3%A3o-paulo-brazil-business-center-financial-center-great.jpg?s=612x612&w=0&k=20&c=n35iXQqYHNJT2AfL9nOpQ-TDM_nsJyJhI8-lRKD_3aw='
+        body.style.backgroundImage = 'linear-gradient(90deg, rgb(4, 4, 17), rgb(28, 28, 41))'
+        foto.src = 'https://img.magnific.com/fotos-gratis/floresta-e-o-ceu-estrelado-a-noite_181624-25888.jpg?semt=ais_hybrid&w=740&q=80'
     }
     
 }
