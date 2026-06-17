@@ -11,7 +11,7 @@ body {
 
 h1 {
     padding: 30px;
-    padding-top: 50px;
+    padding-top: 30px;
     text-align: center;
     font-size: 2em;
     color: white;
@@ -83,7 +83,7 @@ hr {
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 30%;
+    width: 25%;
 }
 
 i {
